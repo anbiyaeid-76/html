@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Military Registration Form</title>
+
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body{
+      min-height:100vh;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      padding:40px;
+      background: linear-gradient(
+        135deg,
+        #000000,
+        #111111,
+        #1f1f1f,
+        #2c2c2c
+      );
+      color:white;
+    }
+
+    .container{
+      width:100%;
+      max-width:950px;
+      background: rgba(255,255,255,0.06);
+      border:1px solid rgba(255,255,255,0.1);
+      backdrop-filter: blur(10px);
+      border-radius:20px;
+      padding:40px;
+      box-shadow:0 0 25px rgba(0,0,0,0.6);
+    }
+
+    h1{
+      text-align:center;
+      margin-bottom:30px;
+      font-size:38px;
+      color:#00ffcc;
+      letter-spacing:2px;
+    }
+
+    fieldset{
+      border:2px solid #00ffcc;
+      border-radius:15px;
+      padding:25px;
+      margin-bottom:25px;
+    }
+
+    legend{
+      padding:0 12px;
+      color:#00ffcc;
+      font-size:20px;
+      font-weight:bold;
+    }
+
+    .form-group{
+      margin-bottom:20px;
+    }
+
+    label{
+      display:block;
+      margin-bottom:8px;
+      font-weight:bold;
+      color:#dddddd;
+    }
+
+    input,
+    select,
+    textarea{
+      width:100%;
+      padding:14px;
+      border:none;
+      border-radius:10px;
+      background:#1c1c1c;
+      color:white;
+      font-size:15px;
+      outline:none;
+      border:1px solid #333;
+      transition:0.3s;
+    }
+
+    input:focus,
+    select:focus,
+    textarea:focus{
+      border-color:#00ffcc;
+      box-shadow:0 0 10px #00ffcc;
+    }
+
+    textarea{
+      resize:none;
+      height:120px;
+    }
+
+    .radio-group,
+    .checkbox-group{
+      display:flex;
+      gap:20px;
+      flex-wrap:wrap;
+      margin-top:10px;
+    }
+
+    .radio-group label,
+    .checkbox-group label{
+      display:flex;
+      align-items:center;
+      gap:8px;
+      font-weight:normal;
+    }
+
+    input[type="radio"],
+    input[type="checkbox"]{
+      width:auto;
+      accent-color:#00ffcc;
+    }
+
+    input[type="range"]{
+      accent-color:#00ffcc;
+    }
+
+    .buttons{
+      display:flex;
+      gap:20px;
+      justify-content:center;
+      margin-top:30px;
+    }
+
+    button{
+      padding:14px 35px;
+      border:none;
+      border-radius:10px;
+      font-size:16px;
+      font-weight:bold;
+      cursor:pointer;
+      transition:0.3s;
+    }
+
+    .submit-btn{
+      background:#00ffcc;
+      color:black;
+    }
+
+    .submit-btn:hover{
+      background:#00ccaa;
+      transform:scale(1.05);
+    }
+
+    .reset-btn{
+      background:#333;
+      color:white;
+    }
+
+    .reset-btn:hover{
+      background:#555;
+      transform:scale(1.05);
+    }
+
+    .row{
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:20px;
+    }
+
+    @media(max-width:768px){
+      .row{
+        grid-template-columns:1fr;
+      }
+
+      .container{
+        padding:25px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+
+    <h1>Soldier Registration Form</h1>
+
+    <form action="https://microsoft.com">
+
+      <!-- Personal Information -->
+      <fieldset>
+        <legend>Personal Information</legend>
+
+        <div class="row">
+
+          <div class="form-group">
+            <label>Full Name</label>
+            <input 
+              type="text" 
+              placeholder="Enter full name"
+              value="Ahmed Hassan Ali"
+            >
+          </div>
+
+          <div class="form-group">
+            <label>Military ID</label>
+            <input 
+              type="text" 
+              placeholder="Enter military ID"
+              value="MIL-2026-4587"
+            >
+          </div>
+
+        </div>
+
+        <div class="row">
+
+          <div class="form-group">
+            <label>Email Address</label>
+            <input 
+              type="email" 
+              placeholder="Enter email"
+              value="ahmed.hassan@army.com"
+            >
+          </div>
+
+          <div class="form-group">
+            <label>Password</label>
+            <input 
+              type="password" 
+              placeholder="Enter password"
+              value="Soldier123"
+            >
+          </div>
+
+        </div>
+
+        <div class="row">
+
+          <div class="form-group">
+            <label>Phone Number</label>
+            <input 
+              type="tel" 
+              placeholder="Enter phone number"
+              value="+252 907654321"
+            >
+          </div>
+
+          <div class="form-group">
+            <label>Age</label>
+            <input 
+              type="number" 
+              min="18" 
+              max="60"
+              placeholder="Enter age"
+              value="29"
+            >
+          </div>
+
+        </div>
+
+        <div class="row">
+
+          <div class="form-group">
+            <label>Date of Birth</label>
+            <input type="date" value="1997-04-12">
+          </div>
+
+          <div class="form-group">
+            <label>Website</label>
+            <input 
+              type="url" 
+              placeholder="Enter website"
+              value="https://army-profile.com"
+            >
+          </div>
+
+        </div>
+
+      </fieldset>
+
+      <!-- Military Information -->
+      <fieldset>
+        <legend>Military Information</legend>
+
+        <div class="row">
+
+          <div class="form-group">
+            <label>Rank</label>
+            <select>
+              <option>Private</option>
+              <option selected>Corporal</option>
+              <option>Sergeant</option>
+              <option>Lieutenant</option>
+              <option>Captain</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label>Deployment Date</label>
+            <input type="datetime-local" value="2026-06-15T08:30">
+          </div>
+
+        </div>
+
+        <div class="form-group">
+          <label>Mission Color</label>
+          <input type="color" value="#00ffcc">
+        </div>
+
+        <div class="form-group">
+          <label>Experience Level</label>
+          <input type="range" min="0" max="100" value="80">
+        </div>
+
+        <div class="form-group">
+          <label>Upload Soldier Photo</label>
+          <input type="file">
+        </div>
+
+      </fieldset>
+
+      <!-- Gender -->
+      <fieldset>
+        <legend>Gender</legend>
+
+        <div class="radio-group">
+
+          <label>
+            <input type="radio" name="gender" checked>
+            Male
+          </label>
+
+          <label>
+            <input type="radio" name="gender">
+            Female
+          </label>
+
+        </div>
+
+      </fieldset>
+
+      <!-- Skills -->
+      <fieldset>
+        <legend>Skills & Equipment</legend>
+
+        <div class="checkbox-group">
+
+          <label>
+            <input type="checkbox" checked>
+            Weapon Training
+          </label>
+
+          <label>
+            <input type="checkbox" checked>
+            First Aid
+          </label>
+
+          <label>
+            <input type="checkbox">
+            Navigation
+          </label>
+
+          <label>
+            <input type="checkbox" checked>
+            Communication
+          </label>
+
+        </div>
+
+      </fieldset>
+
+      <!-- Extra Notes -->
+      <fieldset>
+        <legend>Additional Notes</legend>
+
+        <div class="form-group">
+          <label>Description</label>
+          <textarea placeholder="Write additional information...">
+Experienced soldier with 6 years of active service and advanced combat training.
+          </textarea>
+        </div>
+
+        <div class="form-group">
+          <label>Search Soldier</label>
+          <input 
+            type="search" 
+            placeholder="Search here"
+            value="Ahmed Hassan"
+          >
+        </div>
+
+        <div class="form-group">
+          <label>Hidden Input</label>
+          <input type="hidden" value="secret">
+        </div>
+
+      </fieldset>
+
+      <!-- Buttons -->
+      <div class="buttons">
+        <button type="submit" class="submit-btn">
+          Register Soldier
+        </button>
+
+        <button type="reset" class="reset-btn">
+          Reset Form
+        </button>
+      </div>
+
+    </form>
+
+  </div>
+
+</body>
+</html>
