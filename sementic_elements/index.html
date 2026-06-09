@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Semantic HTML Website</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      background: #0f172a;
+      color: #e2e8f0;
+    }
+
+    header, nav, main, section, article, aside, footer {
+      padding: 20px;
+      margin: 10px;
+      border-radius: 10px;
+    }
+
+    header {
+      background: #1e293b;
+      text-align: center;
+    }
+
+    nav {
+      background: #334155;
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    main {
+      display: flex;
+      gap: 10px;
+    }
+
+    section {
+      flex: 3;
+      background: #1e293b;
+    }
+
+    aside {
+      flex: 1;
+      background: #334155;
+    }
+
+    article {
+      background: #0f172a;
+      padding: 15px;
+      margin-top: 10px;
+      border: 1px solid #334155;
+    }
+
+    footer {
+      text-align: center;
+      background: #1e293b;
+    }
+
+    figure {
+      background: #111827;
+      padding: 10px;
+      border-radius: 8px;
+    }
+
+    figcaption {
+      font-size: 14px;
+      color: #94a3b8;
+    }
+
+    form input, form textarea {
+      width: 100%;
+      margin: 5px 0;
+      padding: 10px;
+      border-radius: 5px;
+      border: none;
+    }
+
+    button {
+      padding: 10px 15px;
+      background: #38bdf8;
+      border: none;
+      color: black;
+      font-weight: bold;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>My Semantic Website</h1>
+    <p>Using all HTML semantic elements</p>
+  </header>
+
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Services</a>
+    <a href="#">Contact</a>
+  </nav>
+
+  <main>
+
+    <section>
+      <h2>Main Content Section</h2>
+
+      <article>
+        <h3>Article 1</h3>
+        <p>This is a sample article inside a section.</p>
+      </article>
+
+      <article>
+        <h3>Article 2</h3>
+        <p>Another article showing semantic structure.</p>
+      </article>
+
+      <figure>
+        <img src="https://via.placeholder.com/300" alt="Sample Image">
+        <figcaption>This is a sample figure with caption</figcaption>
+      </figure>
+    </section>
+
+    <aside>
+      <h2>Sidebar</h2>
+      <p>This is an aside element for extra info.</p>
+
+      <h3>Contact Form</h3>
+      <form>
+        <input type="text" placeholder="Your Name">
+        <input type="email" placeholder="Your Email">
+        <textarea rows="4" placeholder="Message"></textarea>
+        <button type="submit">Send</button>
+      </form>
+    </aside>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Semantic Website. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
